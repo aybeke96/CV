@@ -1,0 +1,30 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-transform: uppercase;
+}
+div{
+    background: white;
+    width: 300px;
+    border: 1px solid green;
+}
+img{
+    border-radius: 50%;
+}
+#menu{
+    width: 100%;
+    width: 300px;
+}
+#menu a{
+    text-decoration: none;
+    margin: 30px;
+    font: 25px sans-serif;
+    text-transform: uppercase;
+}
+#menu a:hover{
+    color: forestgreen;
+}
+.content{
+    background: rgba(0, 128, 0, 0.4);
+}
