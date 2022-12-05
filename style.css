@@ -4,7 +4,7 @@
 h1{
     text-transform: uppercase;
 }
-header{
+nav{
     position: sticky;
     top: 0;
     display: flex;
@@ -19,47 +19,8 @@ img{
 img:hover{
     transition: .5s;
     transform:rotate(360deg);
-    width: 300px;
+    /* width: 300px; */
 }
-/* h1{
-    /* равно нижнему */
-    /* animation: 3s infinite alternate slidein; */
-    /* Время выполнение */
-    animation-duration: 3s;
-    /* название анимации */
-    animation-name: slidein;
-    /* Количество Итерации */
-    animation-iteration-count: infinite;
-    /* Направление анимации */
-    animation-direction: alternate;
-  
-    /* If several values */
-    /* animation-name: fadeInOut, moveLeft300px, bounce;
-    animation-duration: 2.5s, 5s, 1s;
-    animation-iteration-count: 2, 1, 5; */
-    /* По очереди */
-    /* animation-duration: 2.5s, 5s;
-    animation-iteration-count: 2, 1; */
-  /* } */
-  /* @keyframes slidein { */
-    /* From 0% of animation, start of animation */
-    from {
-      /* margin-left: 0; */
-      /* width: 100%; */
-    }
-    /* 75% {
-      font-size: 100%;
-      margin-left: 25%;
-      width: 100%;
-    } */
-    /* To 100% of animation, end of animation */
-    to {
-      /* margin-left: 0%; */
-      /* width: 100%; */
-      transform: rotate(360deg);
-  
-    }
-  /* } */ */
 div{
     background: white;
     width: 300px;
@@ -89,12 +50,24 @@ footer{
     /* display: flex;
     justify-content: center; */
 }
-@media (max-width: 500px){
+@media (max-width: 480px){
     *{
-        font-size: 12px;
-        background: yellow;
+        font-size: 1em;
+        /* background: yellow; */
     }
-    body, header, div, .content, footer{
+    /* body, header, div, .content, footer{
         background: yellow;
+    } */
+}
+@media (min-width:769px){
+    *{
+        font-size:2vw;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 40px;
+        align-items: center;
     }
 }
