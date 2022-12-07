@@ -1,73 +1,80 @@
-*{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-h1{
-    text-transform: uppercase;
+
+h1 {
+  text-transform: uppercase;
 }
-nav{
-    position: sticky;
-    top: 0;
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: column;
+  background: white;
+  width: 300px;
+  border: 1px solid green;
+}
+nav a {
+  text-decoration: none;
+  margin: 0 30px;
+  font: 25px sans-serif;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: forestgreen;
+}
+
+img {
+  border-radius: 50%;
+  transition: 0.5s;
+}
+img:hover {
+  transition: 0.5s;
+  transform: rotate(360deg);
+  /* width: 300px; */
+}
+
+div {
+  background: white;
+  width: 300px;
+  border: 1px solid green;
+}
+
+.content {
+  background: rgba(0, 128, 0, 0.4);
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: yellowgreen;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 1em;
+    /* background: yellow; */
+  }
+  /* body, header, div, .content, footer{
+      background: yellow;
+  } */
+}
+@media (min-width: 769px) {
+  * {
+    font-size: 2vw;
+  }
+  main {
     display: flex;
-    flex-flow: column;
-    background: white;
-    width: 300px;
-    border: 1px solid green;
-}
-img{
-    transition: .5s;
-}
-img:hover{
-    transition: .5s;
-    transform:rotate(360deg);
-    /* width: 300px; */
-}
-div{
-    background: white;
-    width: 300px;
-    border: 1px solid green;
-}
-img{
-    border-radius: 50%;
-}
-#menu a{
-    text-decoration: none;
-    margin: 0 30px;
-    font: 25px sans-serif;
-    text-transform: uppercase;
-}
-#menu a:hover{
-    color: forestgreen;
-}
-.content{
-    background: rgba(0, 128, 0, 0.4);
-}
-footer{
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background: yellowgreen;
-    text-align: center;
-    /* display: flex;
-    justify-content: center; */
-}
-@media (max-width: 480px){
-    *{
-        font-size: 1em;
-        /* background: yellow; */
-    }
-    /* body, header, div, .content, footer{
-        background: yellow;
-    } */
-}
-@media (min-width:769px){
-    *{
-        font-size:2vw;
-    }
-    main{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        line-height: 40px;
-        align-items: center;
-    }
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 40px;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
