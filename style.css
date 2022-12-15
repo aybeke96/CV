@@ -7,14 +7,14 @@ h1 {
 }
 
 nav {
+  background: white;
+  width: 300px;
+  border: 1px solid green;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
   flex-flow: column;
-  background: white;
-  width: 300px;
-  border: 1px solid green;
 }
 nav a {
   text-decoration: none;

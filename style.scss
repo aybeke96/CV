@@ -1,5 +1,14 @@
 @use 'variables';
 @import './variables';
+@mixin navDiv {
+    background: white;
+    width: 200px+100;
+    border: $borderSize $borderStyle $color;
+}
+@function plus($x, $y){
+    $z:$x+$y;
+    @return $z;
+}
 *{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -7,17 +16,18 @@ h1{
     text-transform: uppercase;
 }
 nav{
+    @include navDiv();
     position: sticky;
     top: 0;
     display: flex;
     flex-flow: column;
-    background: white;
-    width: 300px;
-    border: $borderSize $borderStyle variables.$color;
+    // background: white;
+    // width: 300px;
+    // border: $borderSize $borderStyle variables.$color;
     a{
         text-decoration: none;
         margin: 0 30px;
-        font: 25px sans-serif;
+        font: plus(2,3)*5px sans-serif;
         text-transform: uppercase;
         &:hover{
             color: forestgreen;
@@ -34,9 +44,10 @@ img{
     }
 }
 div{
-    background: white;
-    width: 300px;
-    border: $borderSize $borderStyle $color;
+    @include navDiv();
+    // background: white;
+    // width: 300px;
+    // border: $borderSize $borderStyle $color;
 }
 .content{
     background: rgba(0, 128, 0, 0.4);
@@ -67,7 +78,7 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        line-height: 40px;
+        line-height: 80px-40;
         align-items: center;
     }
 }
